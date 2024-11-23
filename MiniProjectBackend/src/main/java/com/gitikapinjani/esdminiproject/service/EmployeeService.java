@@ -1,7 +1,6 @@
 package com.gitikapinjani.esdminiproject.service;
 
 import com.gitikapinjani.esdminiproject.dto.EmployeeRequest;
-import com.gitikapinjani.esdminiproject.dto.LoginRequest;
 import com.gitikapinjani.esdminiproject.dto.LoginResponse;
 import com.gitikapinjani.esdminiproject.entity.Employees;
 import com.gitikapinjani.esdminiproject.entity.Login;

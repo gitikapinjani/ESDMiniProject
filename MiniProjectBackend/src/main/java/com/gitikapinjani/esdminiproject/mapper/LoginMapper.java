@@ -1,7 +1,5 @@
 package com.gitikapinjani.esdminiproject.mapper;
 
-
-import com.gitikapinjani.esdminiproject.dto.LoginRequest;
 import com.gitikapinjani.esdminiproject.dto.LoginResponse;
 import com.gitikapinjani.esdminiproject.entity.Login;
 import org.springframework.stereotype.Service;

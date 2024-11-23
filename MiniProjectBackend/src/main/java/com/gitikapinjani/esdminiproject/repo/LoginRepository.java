@@ -9,10 +9,5 @@ import java.util.Optional;
 
 @Repository
 public interface LoginRepository extends JpaRepository<Login, Integer> {
-
-    //Employee login(String email, String password);
-    //Employee login(@Param("email") String email, @Param("password") String password);
-//    @Query("SELECT e FROM Employee e WHERE e.email = :email AND e.password = :password")
-//    Employee login(@Param("email") String email, @Param("password") String password);
     Optional<Login> findByEmployees(Employees employees);
 }
