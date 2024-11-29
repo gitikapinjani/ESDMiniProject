@@ -27,10 +27,6 @@ public class Employees {
     @Column(name="title", nullable = false)
     private String title;
 
-    //need to change
-//    @Column(name="photograph_path", nullable = false)
-//    private String photographPath;
-
     @Column(name="department", nullable = false)
     private String department;
 }

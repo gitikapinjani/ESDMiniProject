@@ -2,9 +2,12 @@ package com.gitikapinjani.esdminiproject.controller;
 
 import com.gitikapinjani.esdminiproject.dto.CourseDetailsResponse;
 import com.gitikapinjani.esdminiproject.dto.CourseRequest;
+import com.gitikapinjani.esdminiproject.dto.SpecializationResponse;
 import com.gitikapinjani.esdminiproject.entity.Courses;
+import com.gitikapinjani.esdminiproject.entity.Specialization;
+import com.gitikapinjani.esdminiproject.entity.SpecializationCourse;
 import com.gitikapinjani.esdminiproject.service.CourseService;
-
+import com.gitikapinjani.esdminiproject.service.SpecializationService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,19 +18,14 @@ import java.util.List;
 
 @RequiredArgsConstructor
 @RestController
-@RequestMapping("/api/v1/course")
-public class CourseController {
+@RequestMapping("/api/v1/specialization")
+public class SpecializationController {
 
     @Autowired
-    private CourseService courseService;
+    private SpecializationService specializationService;
 
-    @PostMapping("/addCourse")
-    public ResponseEntity<Courses> addCourse(@RequestBody @Valid CourseRequest request) {
-        return ResponseEntity.ok(courseService.addCourse(request));
-    }
-
-    @GetMapping("/getAllCourses")
-    public List<CourseDetailsResponse> getAllCourses() {
-        return courseService.getAllCourses();
+    @GetMapping("/getAllSpecialization")
+    public List<Specialization> getAllSpecialization() {
+        return specializationService.getAllSpecialization();
     }
 }

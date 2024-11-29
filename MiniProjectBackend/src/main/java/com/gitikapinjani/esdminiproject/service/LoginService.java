@@ -38,8 +38,8 @@ public class LoginService implements UserDetailsService {
         Optional<Login> existingUser = loginRepository.findByEmployees(existingEmployee);
 
         if (existingUser.isPresent()) {
-            if(!encryptionService.validates(request.password(), existingUser.get().getPassword())) {
-                return "Wrong Password or Email";
+            if(!(encryptionService.validates(request.password(), existingUser.get().getPassword()) && existingEmployee.getDepartment().equals("Admin"))) {
+                return "Wrong Password or Email or Not From Admin Department";
             }
             else {
                 return jwtHelper.generateToken(request.email());

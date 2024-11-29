@@ -16,13 +16,13 @@ public class Courses {
     @Column(name = "course_id")
     private Long courseId;
 
-    @Column(name = "course_code", nullable = false)
+    @Column(name = "course_code", nullable = false, unique = true)
     private String courseCode;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "description", nullable = false, unique = true)
+    @Column(name = "description", nullable = false)
     private String description;
 
     @Column(name="year", nullable = false)
@@ -39,6 +39,7 @@ public class Courses {
 
     @Column(name="capacity", nullable = false)
     private int capacity;
+
 }
 
 

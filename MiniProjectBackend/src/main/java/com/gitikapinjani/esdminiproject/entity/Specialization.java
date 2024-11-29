@@ -19,10 +19,10 @@ public class Specialization {
     @Column(name = "code", nullable = false, unique = true)
     private String code;
 
-    @Column(name = "name")
+    @Column(name = "name", nullable = false)
     private String name;
 
-    @Column(name = "description", nullable = false, unique = true)
+    @Column(name = "description", nullable = false)
     private String description;
 
     @Column(name="year", nullable = false)

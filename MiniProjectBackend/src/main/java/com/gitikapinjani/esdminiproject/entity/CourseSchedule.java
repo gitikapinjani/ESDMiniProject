@@ -20,10 +20,10 @@ public class CourseSchedule {
     @JoinColumn(name = "course_id", referencedColumnName = "course_id")
     private Courses courses;
 
-    @Column(name = "time")
+    @Column(name = "time", nullable = false)
     private String time;
 
-    @Column(name = "day", nullable = false, unique = true)
+    @Column(name = "day", nullable = false)
     private String day;
 
     @Column(name = "room", nullable = false)

@@ -10,18 +10,16 @@ import lombok.*;
 @Entity
 @Table(name = "course_prerequistic")
 public class CoursePrerequistic {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
     private Long id;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "course_id", referencedColumnName = "course_id")
-    private Courses courses;
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "course", referencedColumnName = "course_id")
+    private Courses course;
 
-    @OneToOne(cascade = CascadeType.ALL)
-    @JoinColumn(name = "prerequistic_course_id", referencedColumnName = "course_id")
-    private Courses prerequisticCourses;
-
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "prerequisite", referencedColumnName = "course_id")
+    private Courses prerequisite;
 }

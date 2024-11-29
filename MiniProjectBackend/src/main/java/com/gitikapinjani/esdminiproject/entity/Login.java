@@ -24,9 +24,4 @@ public class Login {
     @Column(name="password", nullable = false)
     private String password;
 
-    public boolean isPasswordMatch(String enteredPassword) {
-        // Assuming passwords are stored in plain text (not recommended for production)
-        return enteredPassword.equals(this.password);
-    }
-
 }
