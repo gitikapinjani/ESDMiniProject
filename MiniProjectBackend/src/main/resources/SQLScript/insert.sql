@@ -7,5 +7,4 @@ INSERT INTO `esdminiproject`.`specialization` (`specialization_id`, `code`, `cre
 INSERT INTO `esdminiproject`.`specialization` (`specialization_id`, `code`, `credits_required`, `description`, `name`, `year`) VALUES ('7', 'GE', '10', 'General Elective', 'General Elective', '2025');
 
 
-
 INSERT INTO `esdminiproject`.`courses` (`course_id`, `capacity`, `course_code`, `credits`, `description`, `faculty_name`, `name`, `term`, `year`) VALUES ('0', '0', 'NULL', '0', 'NO Prerequistic require', 'NO Prerequistic require', 'NO Prerequistic require', '0', '0');
