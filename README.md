@@ -52,8 +52,17 @@ The project is built with *Spring Boot* for backend logic and *React* for fronte
 
 ---
 
-### Frontend Setup
-1. Navigate to the `/admin-course-react` directory.  
+### Frontend
+1. Navigate to the esd-mini-react directory.
 2. Install dependencies:  
-   ```bash
-   npm install
+   bash
+   npm run
+3. Start Frontend:  
+   bash
+   npm start
+
+### Backtend
+1. Navigate to the ESD_MINI directory.
+2. Install dependencies:  
+- Open this with Intellij IDEA
+3. Run the project
